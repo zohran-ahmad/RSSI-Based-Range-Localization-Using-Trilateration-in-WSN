@@ -1,0 +1,8 @@
+*.sky
+*.o
+*.a
+obj_sky/
+symbols.c
+symbols.h
+*.log
+build/
