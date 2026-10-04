@@ -4,7 +4,6 @@
 
 A simulated wireless sensor network in which nodes determine their own location without GPS. A few sensors with known positions (anchors) broadcast signals, and the remaining sensors (unknown nodes) use signal strength to estimate their distance to each anchor, then combine those distances to pinpoint their position. Tested in the Cooja network simulator on a 40 m x 40 m field, the system located nodes to within about 1.6 m, and averaging repeated readings reduced error by roughly two-thirds under noisy conditions.
 
-> Course mini project: Wireless Sensor Networks (21CSE459T), SRMIST, Unit 4 (Ranging Techniques, Range-Based Localization).
 > Simulation only. No real hardware was used.
 
 ---
@@ -136,38 +135,7 @@ All coordinates are in metres on a 40 m x 40 m field.
 
 *Replace the sketch above with `images/layout.png` once the diagram is exported.*
 
-![Network layout](images/layout.png)
-
----
-
-## Repository Structure
-
-```
-wsn-rssi-localization/
-├── README.md
-├── .gitignore
-├── src/
-│   ├── anchor.c          # anchor firmware: broadcasts {id, x, y}
-│   ├── unknown.c         # unknown-node firmware: RSSI -> distance -> least squares
-│   ├── Makefile          # Contiki build file (no extension)
-│   └── rssi.csc          # Cooja simulation (mote types, positions, MRM)
-├── data/
-│   ├── calibration_readings.txt
-│   ├── 4anchors_nonoise.txt
-│   ├── 3anchors_nonoise.txt
-│   ├── 4anchors_sigma2_avg.txt
-│   ├── 4anchors_sigma2_noavg.txt
-│   └── results_summary.xlsx
-├── images/
-│   ├── layout.png
-│   ├── cooja_screenshot.png
-│   └── error_graphs.png
-├── docs/
-│   ├── report.pdf
-│   └── presentation.pdf
-└── dashboard/            # optional: results visualisation
-    └── index.html
-```
+![Network layout](images/network_window.png)
 
 ---
 
@@ -310,7 +278,7 @@ Key comparisons:
 
 Graphs and per-node tables are in `data/results_summary.xlsx` and `images/error_graphs.png`.
 
-![Error graphs](images/error_graphs.png)
+![Error graphs](images/summary.png)
 
 ---
 
