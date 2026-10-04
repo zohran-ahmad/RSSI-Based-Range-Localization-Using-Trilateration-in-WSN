@@ -119,22 +119,6 @@ All coordinates are in metres on a 40 m x 40 m field.
 | Unknown | 9 | (5, 35) |
 | Unknown | 10 | (36, 36) |
 
-```
- y
-40 |  A3(0,40)                       A4(40,40)
-   |      U9(5,35)           U10(36,36)
-   |
-   |              U6(15,25)
-   |
-   |                      U8(30,10)
-   |   U7(8,6)
- 0 |  A1(0,0)                        A2(40,0)
-   +------------------------------------------- x
-   0                                          40
-```
-
-*Replace the sketch above with `images/layout.png` once the diagram is exported.*
-
 ![Network layout](images/network_window.png)
 
 ---
